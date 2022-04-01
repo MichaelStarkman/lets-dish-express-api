@@ -3,10 +3,10 @@ const Schema = mongoose.Schema;
 
 const dishSchema = new Schema ({
     dishName: {type:String, required: true},
+    image: {type:String},
     location: {type:String, required: true},
     cost: {type:Number, default: 0}, 
     category: {type:String}
-    // image: {type:String}
     // description: {type:String}
     // ingredients: {type:[String]}
 
