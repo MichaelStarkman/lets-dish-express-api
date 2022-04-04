@@ -17,7 +17,7 @@ const dishController = require('./controllers/dishController.jsx')
 // ___________________
 // Port (set up for hosting w. heroku)
 // ___________________
-const PORT = 3001
+const PORT = 3001 || process.env.PORT
 
 // ___________________
 // Database
