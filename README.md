@@ -47,3 +47,4 @@ User Story:
 
 Notes to self:
     -Able to submit edit without requirements
+    -styling
