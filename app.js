@@ -15,10 +15,9 @@ const app = express();
 
 const dishController = require('./controllers/dishController.jsx')
 // ___________________
-// Port (set up for hosting w. heroku)
+// port (set up for hosting w. heroku)
 // ___________________
-const PORT = 3001 || process.env.PORT
-
+const port = process.env.PORT || 3001
 // ___________________
 // Database
 // ___________________
@@ -50,4 +49,4 @@ app.use(express.json());
 app.use('/dishes', dishController)
 
 
-module.exports = app.listen(PORT, () => console.log('working on port', PORT))
+module.exports = app.listen(port, () => console.log('working on port', port))
