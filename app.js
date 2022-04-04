@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
 const app = express();
-const cloudinary = require("cloudinary").v2;
+// const cloudinary = require("cloudinary").v2;
 
 
 
@@ -24,11 +24,11 @@ const PORT = 3001
 // ___________________
 const mongoURI = process.env.MONGO_URI
 
-cloudinary.config({
-  cloud_name: 'lets-dish-cloudinary',
-  api_key: process.env.CLOUDINARY_API_KEY, 
-  api_secret:process.env.CLOUDINARY_API_SECRET
-})
+// cloudinary.config({
+//   cloud_name: 'lets-dish-cloudinary',
+//   api_key: process.env.CLOUDINARY_API_KEY, 
+//   api_secret:process.env.CLOUDINARY_API_SECRET
+// })
 // Connect to Mongo]
 const db = mongoose.connection
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true },

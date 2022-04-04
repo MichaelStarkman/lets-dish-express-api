@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const dishSchema = new Schema ({
     dishName: {type:String, required: true},
-    image: {type:String},
+    // image: {type:String},
     location: {type:String, required: true},
     cost: {type:Number, default: 0}, 
     category: {type:String}
@@ -16,3 +16,9 @@ const dishSchema = new Schema ({
 const Dish = mongoose.model('dish', dishSchema);
 
 module.exports = Dish;
+
+
+
+
+
+// need to make changes so that I can push repo

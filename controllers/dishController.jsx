@@ -18,13 +18,13 @@ router.get('/', async (req,res)=>{
     }
 })
 // CREATE
-router.post('/', upload.single("image"), async (req,res) => {
-
+router.post('/', async (req,res) => {
+    // add upload.single("image"), before async
     try {
         const dishData = req.body;
         const newDish = await Dish.create({
             dishName: dishData.dishName,
-            image: dishData.image,
+            // image: dishData.image,
             location: dishData.location,
             cost: dishData.cost,
             category: dishData.category 
