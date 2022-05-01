@@ -44,9 +44,8 @@ router.post('/', async (req,res) => {
 router.get('/:id', async (req,res) => {
     try{
         const dish = await Dish.findById(req.params.id);
-        if(!item){
-            // throw Error is not appearing?
-            throw new Error ("No item by that id here")
+        if(!dish){
+            throw new Error("No dish by that id here")
         }
         res.send({
             success: true,
